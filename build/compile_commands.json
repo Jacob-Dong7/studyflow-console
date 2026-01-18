@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/studyflow.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\studyflow.dir\\src\\main.cpp.obj -c C:\\Programming\\CPP\\Raw_CPP\\studyflow-console\\studyflow-console\\src\\main.cpp",
+  "file": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/main.cpp",
+  "output": "CMakeFiles/studyflow.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/studyflow.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\studyflow.dir\\src\\login.cpp.obj -c C:\\Programming\\CPP\\Raw_CPP\\studyflow-console\\studyflow-console\\src\\login.cpp",
+  "file": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/login.cpp",
+  "output": "CMakeFiles/studyflow.dir/src/login.cpp.obj"
+}
+]
