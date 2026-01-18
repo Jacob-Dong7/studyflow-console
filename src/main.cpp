@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sqlite3.h>
+#include "signup.h"
 #include "login.h"
 
 
@@ -14,6 +15,7 @@ int main() {
         return 0;
     }
 
+    while (true) {
     int userInput;
     std::cout << "Welcome to StudyFlow\n";
     std::cout << "Type 1 to login, 2 to signup and 0 to quit\n";
@@ -28,8 +30,16 @@ int main() {
     if (userInput == 1) {
         Login userLogin;
         userLogin.login(db);
-    } else if (userInput == 2) {
+
+
+
         
+    } else if (userInput == 2) {
+        Signup userSignup;
+        userSignup.signup(db);
+    }
+
+
     }
     return 0;
 }

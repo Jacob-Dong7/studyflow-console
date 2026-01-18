@@ -176,6 +176,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/signup.obj: src/signup.cpp.obj
+.PHONY : src/signup.obj
+
+# target to build an object file
+src/signup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/signup.cpp.obj
+.PHONY : src/signup.cpp.obj
+
+src/signup.i: src/signup.cpp.i
+.PHONY : src/signup.i
+
+# target to preprocess a source file
+src/signup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/signup.cpp.i
+.PHONY : src/signup.cpp.i
+
+src/signup.s: src/signup.cpp.s
+.PHONY : src/signup.s
+
+# target to generate assembly for a file
+src/signup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/signup.cpp.s
+.PHONY : src/signup.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/signup.obj
+	@echo ... src/signup.i
+	@echo ... src/signup.s
 .PHONY : help
 
 

@@ -8,6 +8,9 @@ add_executable(studyflow
     src/main.cpp
     src/login.cpp
     include/login.h
+
+    src/signup.cpp
+    include/signup.h
 )
 
 target_include_directories(studyflow PRIVATE
