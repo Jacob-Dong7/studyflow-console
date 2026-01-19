@@ -128,6 +128,30 @@ studyflow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/build
 .PHONY : studyflow/fast
 
+src/dashboard.obj: src/dashboard.cpp.obj
+.PHONY : src/dashboard.obj
+
+# target to build an object file
+src/dashboard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/dashboard.cpp.obj
+.PHONY : src/dashboard.cpp.obj
+
+src/dashboard.i: src/dashboard.cpp.i
+.PHONY : src/dashboard.i
+
+# target to preprocess a source file
+src/dashboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/dashboard.cpp.i
+.PHONY : src/dashboard.cpp.i
+
+src/dashboard.s: src/dashboard.cpp.s
+.PHONY : src/dashboard.s
+
+# target to generate assembly for a file
+src/dashboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/dashboard.cpp.s
+.PHONY : src/dashboard.cpp.s
+
 src/login.obj: src/login.cpp.obj
 .PHONY : src/login.obj
 
@@ -200,6 +224,30 @@ src/signup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/signup.cpp.s
 .PHONY : src/signup.cpp.s
 
+src/subject.obj: src/subject.cpp.obj
+.PHONY : src/subject.obj
+
+# target to build an object file
+src/subject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/subject.cpp.obj
+.PHONY : src/subject.cpp.obj
+
+src/subject.i: src/subject.cpp.i
+.PHONY : src/subject.i
+
+# target to preprocess a source file
+src/subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/subject.cpp.i
+.PHONY : src/subject.cpp.i
+
+src/subject.s: src/subject.cpp.s
+.PHONY : src/subject.s
+
+# target to generate assembly for a file
+src/subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/subject.cpp.s
+.PHONY : src/subject.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... studyflow
+	@echo ... src/dashboard.obj
+	@echo ... src/dashboard.i
+	@echo ... src/dashboard.s
 	@echo ... src/login.obj
 	@echo ... src/login.i
 	@echo ... src/login.s
@@ -218,6 +269,9 @@ help:
 	@echo ... src/signup.obj
 	@echo ... src/signup.i
 	@echo ... src/signup.s
+	@echo ... src/subject.obj
+	@echo ... src/subject.i
+	@echo ... src/subject.s
 .PHONY : help
 
 

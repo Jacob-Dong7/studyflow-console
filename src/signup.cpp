@@ -2,16 +2,15 @@
 #include <iostream>
 #include "signup.h"
 
-void Signup::signup(sqlite3* db) {
-
+bool Signup::signup(sqlite3* db) {
+    std::cout << "Type -1 to quit\n";
     while (true) {
-        std::cout << "Type -1 to quit\n";
         std::cout << "Please enter your desired username:\n";
         std::cout << "Username must be: At least 3 characters long\n";
         std::cin >> username;
 
         if (username == "-1") {
-            return;
+            return false;
         }
 
         verify = verifyName(username, db);
@@ -45,8 +44,10 @@ void Signup::signup(sqlite3* db) {
         }
 
         std::cout << "Account successfuly created\n";
-        return;
+        break;
     }
+
+    return true;
 }
 
 bool Signup::verifyName(std::string username, sqlite3* db) {

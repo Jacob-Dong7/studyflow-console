@@ -11,6 +11,13 @@ add_executable(studyflow
 
     src/signup.cpp
     include/signup.h
+
+    src/dashboard.cpp
+    include/dashboard.h
+
+    src/subject.cpp
+    include/subject.h
+
 )
 
 target_include_directories(studyflow PRIVATE

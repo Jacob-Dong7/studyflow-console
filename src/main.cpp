@@ -5,6 +5,7 @@
 
 
 int main() {
+    bool verify;
     sqlite3* db = nullptr;
     const char* dbPath = "studyflow.db";
 
@@ -15,14 +16,16 @@ int main() {
         return 0;
     }
 
+    std::cout << "\nWelcome to StudyFlow\n\n";
+
     while (true) {
     int userInput;
-    std::cout << "Welcome to StudyFlow\n";
-    std::cout << "Type 1 to login, 2 to signup and 0 to quit\n";
+    std::cout << "Type 1 to login, 2 to signup and 0 to quit\n\n";
     std::cin >> userInput;
 
     if (userInput == 0) {
         std::cout << "Quitting...\n";
+        sqlite3_close(db);
         return 0;
     }
 
@@ -30,16 +33,21 @@ int main() {
     if (userInput == 1) {
         Login userLogin;
         userLogin.login(db);
-
-
-
-        
     } else if (userInput == 2) {
         Signup userSignup;
-        userSignup.signup(db);
+        verify = userSignup.signup(db);
+
+        if (verify == false) {
+            std::cout << "Signup failed\n";
+        } else {
+            std::cout << "Signup complete\n";
+        }
+        continue;
     }
 
 
     }
+
+    sqlite3_close(db);
     return 0;
 }

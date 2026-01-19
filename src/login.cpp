@@ -2,28 +2,29 @@
 #include <sqlite3.h>
 
 #include "login.h"
+#include "dashboard.h"
 
 void Login::login(sqlite3* db) {
     int rc;
     sqlite3_stmt* stmt = nullptr;
-    std::cout << "Type -1 to quit\n";
+    std::cout << "\nType -1 to quit\n\n";
 
     while (true) {
         if (username == "-1") return;
 
-        std::cout << "Please enter your username:\n";
+        std::cout << "\nPlease enter your username:\n\n";
         std::cin >> username;
 
         if (username.empty()) {
-            std::cout << "Username is empty";
+            std::cout << "\nUsername is empty\n\n";
             continue;
         }
 
-        std::cout << "Please enter your password:\n";
+        std::cout << "\nPlease enter your password:\n\n";
         std::cin >> password;
 
         if (password.empty()) {
-            std::cout << "Password is empty";
+            std::cout << "\nPassword is empty\n\n";
             continue;
         }
         
@@ -37,16 +38,18 @@ void Login::login(sqlite3* db) {
         rc = sqlite3_step(stmt);
 
         if (rc == SQLITE_ROW) {
-            std::cout << "Login success\n";
+            std::cout << "Login success\n\n";
             sqlite3_finalize(stmt);
-            return;
+            break;
         } else if (rc = SQLITE_DONE){
-            std::cout << "Login failed\n";
+            std::cout << "\nLogin failed\n\n";
             sqlite3_finalize(stmt);
             return;
         }
-
-
     }
-    
+
+    Dashboard userDash;
+    userDash.dashboard(db, username, password);
+
+    return;
 }
