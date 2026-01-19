@@ -7,13 +7,12 @@
 void Login::login(sqlite3* db) {
     int rc;
     sqlite3_stmt* stmt = nullptr;
-    std::cout << "\nType -1 to quit\n\n";
+    std::cout << "\n-1(Return)\n\n";
 
     while (true) {
-        if (username == "-1") return;
-
-        std::cout << "\nPlease enter your username:\n\n";
+        std::cout << "Please enter your username:\n\n";
         std::cin >> username;
+        if (username == "-1") return;
 
         if (username.empty()) {
             std::cout << "\nUsername is empty\n\n";

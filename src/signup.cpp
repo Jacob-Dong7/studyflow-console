@@ -3,13 +3,13 @@
 #include "signup.h"
 
 bool Signup::signup(sqlite3* db) {
-    std::cout << "Type -1 to quit\n";
     while (true) {
-        std::cout << "Please enter your desired username:\n";
-        std::cout << "Username must be: At least 3 characters long\n";
+        std::cout << "\nPlease enter your desired username -1(Return):\n";
+        std::cout << "(Username must be: At least 3 characters long)\n\n";
         std::cin >> username;
 
         if (username == "-1") {
+            std::cout << "\nReturning...\n";
             return false;
         }
 
@@ -19,9 +19,14 @@ bool Signup::signup(sqlite3* db) {
             continue;
         }
 
-        std::cout << "Please enter your desired password:\n";
-        std::cout << "Password must be: At least 5 characters long\n";
+        std::cout << "\nPlease enter your desired password -1(Return):\n";
+        std::cout << "(Password must be: At least 5 characters long)\n\n";
         std::cin >> password;
+
+        if (password == "-1") {
+            std::cout << "\nReturning...\n";
+            return false;
+        }
 
         verify = verifyPassword(password);
 
@@ -29,12 +34,22 @@ bool Signup::signup(sqlite3* db) {
             continue;
         } 
 
-        std::cout << "Please select your university:\n";
-        std::cout << "1(RMIT), 2(Monash), 3(USYD)\n";
+        std::cout << "\nPlease select your university -1(Return):\n";
+        std::cout << "1(RMIT), 2(Monash), 3(USYD)\n\n";
         std::cin >> uni;
 
-        std::cout << "Please select your email address:\n";
+        if (uni == -1) {
+            std::cout << "\nReturning...\n";
+            return false;
+        }
+
+        std::cout << "\nPlease select your email address -1(Return):\n\n";
         std::cin >> email;
+
+        if (email == "-1") {
+            std::cout << "\nReturning...\n";
+            return false;
+        }
 
         verify = save(username, password, email, uni, db);
 

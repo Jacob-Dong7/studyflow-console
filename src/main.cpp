@@ -1,3 +1,4 @@
+//.\build\studyflow.exe
 #include <iostream>
 #include <sqlite3.h>
 #include "signup.h"
@@ -20,11 +21,11 @@ int main() {
 
     while (true) {
     int userInput;
-    std::cout << "Type 1 to login, 2 to signup and 0 to quit\n\n";
+    std::cout << "1(Login) 2(Signup) -1(Quit)\n\n";
     std::cin >> userInput;
 
-    if (userInput == 0) {
-        std::cout << "Quitting...\n";
+    if (userInput == -1) {
+        std::cout << "\nQuitting...\n";
         sqlite3_close(db);
         return 0;
     }
@@ -38,9 +39,9 @@ int main() {
         verify = userSignup.signup(db);
 
         if (verify == false) {
-            std::cout << "Signup failed\n";
+            std::cout << "Signup failed\n\n";
         } else {
-            std::cout << "Signup complete\n";
+            std::cout << "Signup complete\n\n";
         }
         continue;
     }
