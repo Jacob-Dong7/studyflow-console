@@ -21,7 +21,9 @@ int main() {
 
     while (true) {
     int userInput;
-    std::cout << "1(Login) 2(Signup) -1(Quit)\n\n";
+    std::cout << "---------------------------\n";
+    std::cout << "1(Login) 2(Signup) -1(Quit)\n";
+    std::cout << "---------------------------\n";
     std::cin >> userInput;
 
     if (userInput == -1) {

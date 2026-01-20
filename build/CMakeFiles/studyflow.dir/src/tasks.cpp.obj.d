@@ -1,6 +1,6 @@
-CMakeFiles/studyflow.dir/src/dashboard.cpp.obj: \
- C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\src\dashboard.cpp \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/dashboard.h \
+CMakeFiles/studyflow.dir/src/tasks.cpp.obj: \
+ C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\src\tasks.cpp \
+ C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/tasks.h \
  C:/msys64/ucrt64/include/sqlite3.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
@@ -102,9 +102,6 @@ CMakeFiles/studyflow.dir/src/dashboard.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/15.2.0/tuple \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/profile.h \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/tasks.h \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/subject.h \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream \
  C:/msys64/ucrt64/include/c++/15.2.0/ostream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \

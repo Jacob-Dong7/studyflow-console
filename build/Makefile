@@ -272,6 +272,30 @@ src/subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/subject.cpp.s
 .PHONY : src/subject.cpp.s
 
+src/tasks.obj: src/tasks.cpp.obj
+.PHONY : src/tasks.obj
+
+# target to build an object file
+src/tasks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/tasks.cpp.obj
+.PHONY : src/tasks.cpp.obj
+
+src/tasks.i: src/tasks.cpp.i
+.PHONY : src/tasks.i
+
+# target to preprocess a source file
+src/tasks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/tasks.cpp.i
+.PHONY : src/tasks.cpp.i
+
+src/tasks.s: src/tasks.cpp.s
+.PHONY : src/tasks.s
+
+# target to generate assembly for a file
+src/tasks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/tasks.cpp.s
+.PHONY : src/tasks.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -299,6 +323,9 @@ help:
 	@echo ... src/subject.obj
 	@echo ... src/subject.i
 	@echo ... src/subject.s
+	@echo ... src/tasks.obj
+	@echo ... src/tasks.i
+	@echo ... src/tasks.s
 .PHONY : help
 
 

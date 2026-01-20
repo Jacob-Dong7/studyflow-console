@@ -21,6 +21,9 @@ add_executable(studyflow
     src/profile.cpp
     include/profile.h
 
+    src/tasks.cpp
+    include/tasks.h
+
 )
 
 target_include_directories(studyflow PRIVATE

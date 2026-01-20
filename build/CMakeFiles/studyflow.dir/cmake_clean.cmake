@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/studyflow.dir/src/signup.cpp.obj.d"
   "CMakeFiles/studyflow.dir/src/subject.cpp.obj"
   "CMakeFiles/studyflow.dir/src/subject.cpp.obj.d"
+  "CMakeFiles/studyflow.dir/src/tasks.cpp.obj"
+  "CMakeFiles/studyflow.dir/src/tasks.cpp.obj.d"
   "libstudyflow.dll.a"
   "studyflow.exe"
   "studyflow.exe.manifest"

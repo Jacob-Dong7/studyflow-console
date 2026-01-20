@@ -84,12 +84,12 @@ clean: CMakeFiles/studyflow.dir/clean
 CMakeFiles/studyflow.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target studyflow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target studyflow"
 .PHONY : CMakeFiles/studyflow.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/studyflow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/studyflow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles 0
 .PHONY : CMakeFiles/studyflow.dir/rule
@@ -101,7 +101,7 @@ studyflow: CMakeFiles/studyflow.dir/rule
 # codegen rule for target.
 CMakeFiles/studyflow.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target studyflow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target studyflow"
 .PHONY : CMakeFiles/studyflow.dir/codegen
 
 # clean rule for target.

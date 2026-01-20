@@ -10,20 +10,28 @@ void Login::login(sqlite3* db) {
     std::cout << "\n-1(Return)\n\n";
 
     while (true) {
-        std::cout << "Please enter your username:\n\n";
+        std::cout << "---------------------------\n";
+        std::cout << "Please enter your username:\n";
+        std::cout << "---------------------------\n";
         std::cin >> username;
         if (username == "-1") return;
 
         if (username.empty()) {
-            std::cout << "\nUsername is empty\n\n";
+            std::cout << "-------------------\n";
+            std::cout << "\nUsername is empty\n";
+            std::cout << "-------------------\n";
             continue;
         }
 
-        std::cout << "\nPlease enter your password:\n\n";
+        std::cout << "-----------------------------\n";
+        std::cout << "\nPlease enter your password:\n";
+        std::cout << "-----------------------------\n";
         std::cin >> password;
 
         if (password.empty()) {
-            std::cout << "\nPassword is empty\n\n";
+            std::cout << "-------------------\n";
+            std::cout << "\nPassword is empty\n";
+            std::cout << "-------------------\n";
             continue;
         }
         

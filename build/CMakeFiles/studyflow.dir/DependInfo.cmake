@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/profile.cpp" "CMakeFiles/studyflow.dir/src/profile.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/profile.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/signup.cpp" "CMakeFiles/studyflow.dir/src/signup.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/signup.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/subject.cpp" "CMakeFiles/studyflow.dir/src/subject.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/subject.cpp.obj.d"
+  "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/tasks.cpp" "CMakeFiles/studyflow.dir/src/tasks.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/tasks.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
