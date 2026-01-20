@@ -13,8 +13,9 @@
 <h2>📝 Overview</h2>
 
 <p>
-<b>StudyFlow (Console Edition)</b> is a raw, console-based application written in <b>C++</b>,
-designed to help students track subjects and exams while prioritising
+  StudyFlow (Console Edition) is a personal study manager that helps track university subjects and exams.
+  It uses a normalized SQLite schema and prepared statements to keep data consistent and secure.
+  This version runs entirely in the terminal so I can focus on logic and data correctness without UI distractions.
 </p>
 <hr/>
 
