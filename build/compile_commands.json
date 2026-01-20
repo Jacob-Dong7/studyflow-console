@@ -28,5 +28,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/studyflow.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\studyflow.dir\\src\\subject.cpp.obj -c C:\\Programming\\CPP\\Raw_CPP\\studyflow-console\\studyflow-console\\src\\subject.cpp",
   "file": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/subject.cpp",
   "output": "CMakeFiles/studyflow.dir/src/subject.cpp.obj"
+},
+{
+  "directory": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/studyflow.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\studyflow.dir\\src\\profile.cpp.obj -c C:\\Programming\\CPP\\Raw_CPP\\studyflow-console\\studyflow-console\\src\\profile.cpp",
+  "file": "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/profile.cpp",
+  "output": "CMakeFiles/studyflow.dir/src/profile.cpp.obj"
 }
 ]

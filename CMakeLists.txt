@@ -18,6 +18,9 @@ add_executable(studyflow
     src/subject.cpp
     include/subject.h
 
+    src/profile.cpp
+    include/profile.h
+
 )
 
 target_include_directories(studyflow PRIVATE

@@ -200,6 +200,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/profile.obj: src/profile.cpp.obj
+.PHONY : src/profile.obj
+
+# target to build an object file
+src/profile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/profile.cpp.obj
+.PHONY : src/profile.cpp.obj
+
+src/profile.i: src/profile.cpp.i
+.PHONY : src/profile.i
+
+# target to preprocess a source file
+src/profile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/profile.cpp.i
+.PHONY : src/profile.cpp.i
+
+src/profile.s: src/profile.cpp.s
+.PHONY : src/profile.s
+
+# target to generate assembly for a file
+src/profile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\studyflow.dir\build.make CMakeFiles/studyflow.dir/src/profile.cpp.s
+.PHONY : src/profile.cpp.s
+
 src/signup.obj: src/signup.cpp.obj
 .PHONY : src/signup.obj
 
@@ -266,6 +290,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/profile.obj
+	@echo ... src/profile.i
+	@echo ... src/profile.s
 	@echo ... src/signup.obj
 	@echo ... src/signup.i
 	@echo ... src/signup.s

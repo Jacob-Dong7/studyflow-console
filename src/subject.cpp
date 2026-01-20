@@ -31,11 +31,13 @@ void Subject::loadSubject(sqlite3* db, std::string username, std::string passwor
             return;
         }
 
+        std::cout << "You are enrolled in:\n";
+        std::cout << "--------------------\n";
         while (rc == SQLITE_ROW) {
             std::cout << sqlite3_column_text(stmt, 0) << "\n";
             rc = sqlite3_step(stmt);
         }
-        std::cout << "\n";
+        std::cout << "--------------------\n";
     } else if (userInput == 2) {
         createSubject(db, id);
     } else if (userInput == 3) {

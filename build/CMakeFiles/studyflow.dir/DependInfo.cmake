@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/dashboard.cpp" "CMakeFiles/studyflow.dir/src/dashboard.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/dashboard.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/login.cpp" "CMakeFiles/studyflow.dir/src/login.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/login.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/main.cpp" "CMakeFiles/studyflow.dir/src/main.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/main.cpp.obj.d"
+  "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/profile.cpp" "CMakeFiles/studyflow.dir/src/profile.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/profile.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/signup.cpp" "CMakeFiles/studyflow.dir/src/signup.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/signup.cpp.obj.d"
   "C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/src/subject.cpp" "CMakeFiles/studyflow.dir/src/subject.cpp.obj" "gcc" "CMakeFiles/studyflow.dir/src/subject.cpp.obj.d"
   )

@@ -1,14 +1,6 @@
-CMakeFiles/studyflow.dir/src/dashboard.cpp.obj: \
- C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\src\dashboard.cpp \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/dashboard.h \
- C:/msys64/ucrt64/include/sqlite3.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
- C:/msys64/ucrt64/include/stdarg.h \
- C:/msys64/ucrt64/include/_mingw_stdarg.h \
- C:/msys64/ucrt64/include/vadefs.h C:/msys64/ucrt64/include/_mingw.h \
- C:/msys64/ucrt64/include/_mingw_mac.h \
- C:/msys64/ucrt64/include/_mingw_secapi.h \
- C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+CMakeFiles/studyflow.dir/src/profile.cpp.obj: \
+ C:\Programming\CPP\Raw_CPP\studyflow-console\studyflow-console\src\profile.cpp \
+ C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/profile.h \
  C:/msys64/ucrt64/include/c++/15.2.0/string \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -21,6 +13,10 @@ CMakeFiles/studyflow.dir/src/dashboard.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
  C:/msys64/ucrt64/include/wchar.h C:/msys64/ucrt64/include/corecrt.h \
+ C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
  C:/msys64/ucrt64/include/corecrt_wctype.h \
@@ -102,8 +98,10 @@ CMakeFiles/studyflow.dir/src/dashboard.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/15.2.0/tuple \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/profile.h \
- C:/Programming/CPP/Raw_CPP/studyflow-console/studyflow-console/include/subject.h \
+ C:/msys64/ucrt64/include/sqlite3.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
+ C:/msys64/ucrt64/include/stdarg.h \
+ C:/msys64/ucrt64/include/_mingw_stdarg.h \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream \
  C:/msys64/ucrt64/include/c++/15.2.0/ostream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \

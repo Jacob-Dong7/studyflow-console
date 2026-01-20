@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/studyflow.dir/src/login.cpp.obj.d"
   "CMakeFiles/studyflow.dir/src/main.cpp.obj"
   "CMakeFiles/studyflow.dir/src/main.cpp.obj.d"
+  "CMakeFiles/studyflow.dir/src/profile.cpp.obj"
+  "CMakeFiles/studyflow.dir/src/profile.cpp.obj.d"
   "CMakeFiles/studyflow.dir/src/signup.cpp.obj"
   "CMakeFiles/studyflow.dir/src/signup.cpp.obj.d"
   "CMakeFiles/studyflow.dir/src/subject.cpp.obj"
