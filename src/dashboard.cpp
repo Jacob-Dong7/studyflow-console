@@ -14,7 +14,7 @@ void Dashboard::dashboard(sqlite3* db, std::string username, std::string passwor
         std::cout << "\n----------------------------------------\n";
         std::cout << "Options (Press corresponding numbers):\n";
         std::cout << "----------------------------------------\n";
-        std::cout << "1(View Subjects)\n" << "2(Add Subjects)\n" << "3(Delete Subjects)\n" << "4(Tasks)\n" << "5(Calculate GPA)\n"  << "6(Profile)\n" << "-1(Back)\n\n";
+        std::cout << "1(View Subjects)\n" << "2(Add Subjects)\n" << "3(Delete Subjects)\n" << "4(Tasks)\n"  << "6(Profile)\n" << "-1(Back)\n\n";
         std::cin >> userInput;
 
         if (userInput == -1) {

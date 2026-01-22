@@ -21,6 +21,7 @@ void Profile::getProfile(sqlite3* db, int user_id) {
 
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_ROW) {
+        std::cout << "CRITICAL: Error reading database\n";
         sqlite3_finalize(stmt);
         return;
     } else {
@@ -29,14 +30,83 @@ void Profile::getProfile(sqlite3* db, int user_id) {
         uni = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2));
         state = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3));
 
-        std::cout << "\nUser Profile\n------------\n";
+        std::cout << "\nUser Profile\n------------------------------------\n";
         std::cout << "User ID: " << user_id << "\n";
         std::cout << "Username: " << username << "\n";
         std::cout << "Email: " << email << "\n";
         std::cout << "University: " << uni << "\n";
-        std::cout << "State: " << state << "\n\n";
+        std::cout << "State: " << state << "\n";
     }
 
+    const char* subjectSQL = 
+    "SELECT subject_name "
+    "FROM usersubject "
+    "JOIN subjects "
+    "ON subjects.subject_id = usersubject.subject_id " 
+    "WHERE usersubject.user_id = ?;";
+
+    rc = sqlite3_prepare_v2(db, subjectSQL, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cout << "CRITICAL: Error reading database\n";
+        sqlite3_finalize(stmt);
+        return;
+    }
+
+    sqlite3_bind_int(stmt, 1, user_id);
+
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_ROW) {
+        std::cout << "CRITICAL: Error reading database\n";
+        sqlite3_finalize(stmt);
+        return;
+    } else {
+        std::string subjectname;
+        std::cout << "\n----------------------\n";
+        std::cout << "You Are Enrolled In:\n";
+        std::cout <<"----------------------\n";
+        while (rc == SQLITE_ROW) {
+            subjectname = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
+            std::cout << subjectname << "\n";
+            rc = sqlite3_step(stmt);
+        }
+    }
+
+    const char* taskSQL = 
+    "SELECT task_name, due_date "
+    "FROM usertask "
+    "JOIN tasks "
+    "ON tasks.task_id = usertask.task_id " 
+    "WHERE usertask.user_id = ?;";
+
+    rc = sqlite3_prepare_v2(db, taskSQL, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cout << "CRITICAL: Error reading database\n";
+        sqlite3_finalize(stmt);
+        return;
+    }
+
+    sqlite3_bind_int(stmt, 1, user_id);
+
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_ROW) {
+        std::cout << "CRITICAL: Error reading database\n";
+        sqlite3_finalize(stmt);
+        return;
+    } else {
+        std::string taskname;
+        std::string due;
+        std::cout << "\n----------------------\n";
+        std::cout << "Your current tasks:\n";
+        std::cout <<"----------------------\n";
+        while (rc == SQLITE_ROW) {
+            taskname = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
+            due = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1));
+            std::cout << taskname << ", due on: " <<  due << "\n";
+            rc = sqlite3_step(stmt);
+        }
+    }
+
+    std::cout << "------------------------------------\n";
     sqlite3_finalize(stmt);
     return;
 

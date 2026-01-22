@@ -77,7 +77,9 @@ void Subject::createSubject(sqlite3* db, int user_id) {
     int rc;
     sqlite3_stmt* stmt = nullptr;
     while (true) {
-        std::cout << "\nPlease enter the name of the subject -1(Return)\n\n";
+        std::cout << "-----------------------------------------------------";
+        std::cout << "\nPlease enter the name of the subject -1(Return)\n";
+        std::cout << "-----------------------------------------------------\n";
         if (std::cin.peek() == '\n') {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
@@ -97,7 +99,9 @@ void Subject::createSubject(sqlite3* db, int user_id) {
 
         rc = sqlite3_step(stmt);
         if (rc != SQLITE_DONE) {
-            std::cout << "\nError writing to database\n\n";
+            std::cout << "--------------------------------";
+            std::cout << "\nError writing to database\n";
+            std::cout << "--------------------------------\n";
             sqlite3_finalize(stmt);
             return;
         }
@@ -122,7 +126,9 @@ int Subject::getSubjectID(sqlite3* db, std::string subject) {
 
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_ROW) {
-        std::cout << "CRITICAL: Error reading from database\n\n";
+        std::cout << "--------------------------------\n";
+        std::cout << "CRITICAL: Error reading from database\n";
+        std::cout << "--------------------------------\n";
         sqlite3_finalize(stmt);
         return -1;
     } else {
@@ -144,11 +150,15 @@ void Subject::addSubject(sqlite3* db,int user_id, int subject) {
     rc = sqlite3_step(stmt);
 
     if (rc != SQLITE_DONE) {
-        std::cout << "CRTICIAL: Error writing to database\n\n";
+        std::cout << "--------------------------------\n";
+        std::cout << "CRTICIAL: Error writing to database\n";
+        std::cout << "--------------------------------\n";
         sqlite3_finalize(stmt);
         return;
     } else {
-        std::cout << "\nSubject added\n\n";
+        std::cout << "---------------\n";
+        std::cout << "\nSubject added\n";
+        std::cout << "---------------\n";
         sqlite3_finalize(stmt);
         return;
     }
@@ -162,7 +172,9 @@ void Subject::deleteSubject(sqlite3* db, std::string username) {
     bool verify;
     int id, subjectID;
     while (true) {
-        std::cout << "\nPlease enter the name of the subject you want to remove -1(Return)\n\n"; 
+        std::cout << "-----------------------------------------------------------------------";
+        std::cout << "\nPlease enter the name of the subject you want to remove -1(Return)\n"; 
+        std::cout << "-----------------------------------------------------------------------\n";
 
         if (std::cin.peek() == '\n') {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -171,7 +183,9 @@ void Subject::deleteSubject(sqlite3* db, std::string username) {
         std::getline(std::cin, name);
 
         if (name == "-1") {
-            std::cout << "Returning...\n\n";
+            std::cout << "--------------\n";
+            std::cout << "Returning...\n";
+            std::cout << "--------------\n";
             return;
         }
 
@@ -183,13 +197,17 @@ void Subject::deleteSubject(sqlite3* db, std::string username) {
         verify = checkSubject(db, name);
 
         if (verify != true) {
-            std::cout << "\nThe subject you entered does not exist in your record\n\n";
+            std::cout << "--------------------------------------------------------\n";
+            std::cout << "\nThe subject you entered does not exist in your record\n";
+            std::cout << "--------------------------------------------------------\n";
             return;
         } else {
             const char* sql = "DELETE FROM usersubject WHERE user_id = ? AND subject_id = ?;";
             rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
             if (rc != SQLITE_OK) {
-                std::cout << "CRTICIAL: Error writing to database\n\n";
+                std::cout << "--------------------------------\n";
+                std::cout << "CRTICIAL: Error writing to database\n";
+                std::cout << "--------------------------------\n";
                 return;
             }
 
@@ -199,11 +217,15 @@ void Subject::deleteSubject(sqlite3* db, std::string username) {
             rc = sqlite3_step(stmt);
             
             if (rc != SQLITE_DONE) {
-                std::cout << "CRTICIAL: Error writing to database\n\n";
+                std::cout << "--------------------------------\n";
+                std::cout << "CRTICIAL: Error writing to database\n";
+                std::cout << "--------------------------------\n";
                 sqlite3_finalize(stmt);
                 return;
             } 
-            std::cout << "Subject removed\n\n";
+            std::cout << "--------------\n";
+            std::cout << "Subject removed\n";
+            std::cout << "--------------\n";
             sqlite3_finalize(stmt);
             return;
         }
@@ -219,7 +241,9 @@ bool Subject::checkSubject(sqlite3* db, std::string name) {
     rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
     sqlite3_bind_text(stmt, 1, name.c_str(), -1, SQLITE_TRANSIENT);
     if (rc != SQLITE_OK) {
-        std::cout << "CRITICAL: Error reading from database\n\n";
+        std::cout << "--------------------------------\n";
+        std::cout << "CRITICAL: Error reading from database\n";
+        std::cout << "--------------------------------\n";
         sqlite3_finalize(stmt);
         return false;
     } else {

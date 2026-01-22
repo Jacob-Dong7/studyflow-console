@@ -7,7 +7,9 @@
 void Login::login(sqlite3* db) {
     int rc;
     sqlite3_stmt* stmt = nullptr;
-    std::cout << "\n-1(Return)\n\n";
+    std::cout << "\n-------------\n";
+    std::cout << "-1(Return)\n";
+    std::cout << "-------------\n";
 
     while (true) {
         std::cout << "---------------------------\n";
